@@ -1,0 +1,16 @@
+npm install jquery-slotmachine --save
+bower install jquery-slotmachine --save
+<div id="machine">
+  <div>Madrid</div>
+  <div>London</div>
+  <div>New York</div>
+</div>
+
+<script>
+const el = document.querySelector('#machine');
+const machine = new SlotMachine(el, {
+  active: 1,
+  delay: 450,
+  auto: 1500
+});
+</script>
